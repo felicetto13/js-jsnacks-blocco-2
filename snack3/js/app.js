@@ -28,11 +28,10 @@ submitBtn.addEventListener("click", function(){
         }
         let somma =0 ;
         const container = document.getElementById("stampaNumeri");
-        const listUl = document.createElement("ul");
-        container.append(listUl);   
-        const listLi = document.createElement("li");
-        listLi.classList.add("text-capitalize");
-        listUl.append(listLi);
+        const h1 = document.createElement("h1");
+        h1.classList.add("text-center");
+        container.append(h1);   
+        
         for(let i=0; i < arrayNumeri.length; i++){
             if((i % 2 == 1)){
                 console.log(arrayNumeri[i]);
@@ -42,5 +41,5 @@ submitBtn.addEventListener("click", function(){
             
         }
         submitBtn.classList.add("disabled");
-        listLi.append(somma.toString())
+        h1.append(somma.toString())
 })
