@@ -29,7 +29,6 @@ for (let i = 0; i < listaNomi.length; i++) {
 //tramite un pulsante "Genera" creiamo una lista disordinata mischiando nomi e cognomi
 const submitButton = document.getElementById("submitButton");
 const container2 = document.getElementById("stampaNomi");
-     
 let click = 0;
 submitButton.addEventListener("click", function (){
     let indexNomi = 0;
